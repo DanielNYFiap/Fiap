@@ -7,45 +7,35 @@ while True :
     for x in cartao:
         if x == ucard:
             print("SEU CARTAO FOI VAZADO ")
-            continuar1 = input("Digite S para fazer outra verificação ou N para encerrar: ").upper()
-            if continuar1 == "N":
+            continuar = input("Digite S para fazer outra verificação ou N para encerrar: ").upper()
+            if continuar == "N":
                 print("ENCERRADO")
                 exit()
-            elif continuar1 == "S":
-                continuar1=continuar1      
+            elif continuar == "S":
+                break     
             else:
-                while continuar1 != "S" and "N":
-                    continuar1 = input("Digite S ou N apenas: ").upper()
-                if continuar1 == "N":
-                    print("ENCERRADO")
-                    exit()
-                elif continuar1 == "S":
-                    continuar1=continuar1  
-    for x in cartao:                
+                while continuar != "S" and "N":
+                    continuar = input("Digite S ou N apenas: ").upper()
+                    if continuar == "N":
+                        print("ENCERRADO")
+                        exit()
+                if continuar == "S":
+                    break    
+    else:                
         if x != ucard:            
-            print("nao foi encontrado vazamneto deste numero de cartao")
-            continuar2 = input("Digite S para fazer outra verificação ou N para encerrar: ").upper()
-            if continuar2 == "N":
+            print("Nao foi encontrado vazamneto deste numero de cartao")
+            continuar = input("Digite S para fazer outra verificação ou N para encerrar: ").upper()
+            if continuar == "N":
                 print("ENCERRADO")
                 exit()
-            elif continuar2 == "S":
-                continuar2=continuar2      
+            elif continuar == "S":
+                continuar=continuar        
             else:
-                while continuar2 != "S" and "N":
-                    continuar2 = input("Digite S ou N apenas: ").upper()
-                if continuar2 == "N":
-                    print("ENCERRADO")
-                    exit()
-                elif continuar2 == "S":
-                   continuar2=continuar2                        
-
-
-
-
-
-
-
-
-
-
+                while continuar != "S" and "N":
+                    continuar = input("Digite S ou N apenas: ").upper()
+                    if continuar == "N":
+                        print("ENCERRADO")
+                        exit()
+                if continuar == "S":
+                   continuar=continuar                           
 
