@@ -37,5 +37,5 @@ while True :
                         print("ENCERRADO")
                         exit()
                 if continuar == "S":
-                   continuar=continuar                           
+                   break                           
 
